@@ -1,12 +1,10 @@
 import './App.css';
-import { iconPaper } from './images';
+import ChoiceBtns from './components/ChoiceBtns';
+
 function App() {
   return (
     <div className="App">
-      <div>Hello</div>
-      <div>
-        <img src={iconPaper} alt="" />
-      </div>
+      <ChoiceBtns />
     </div>
   );
 }

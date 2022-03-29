@@ -22,8 +22,13 @@
   --Dark-Text: hsl(229, 25%, 31%);
   --Score-Text: hsl(229, 64%, 46%);
   --Header-Outline: hsl(217, 16%, 45%);
-}
 
+  --shadow-light: #c9d0e9;
+  --shadow-medium: hsla(0, 0%, 0%, 0.302);
+}
+img {
+  max-width: 100%;
+}
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -31,4 +36,6 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   color: #fff;
+  display: grid;
+  place-items: center;
 }
