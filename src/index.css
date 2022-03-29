@@ -36,6 +36,4 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   color: #fff;
-  display: grid;
-  place-items: center;
 }

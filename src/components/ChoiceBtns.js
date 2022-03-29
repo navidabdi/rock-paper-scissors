@@ -1,5 +1,6 @@
 import ChoiceButton from './ChoiceButton';
 import { iconPaper, iconRock, iconScissors } from '../images';
+import styled from 'styled-components';
 
 const choiceBgColor = [
   '--Paper-Gradient',
@@ -13,7 +14,7 @@ const choiceBeforeColor = [
 ];
 const ChoiceBtns = () => {
   return (
-    <div className="choiceBtns">
+    <StyledChoiceBtns>
       <ChoiceButton
         icon={iconPaper}
         color={choiceBgColor[0]}
@@ -29,8 +30,17 @@ const ChoiceBtns = () => {
         color={choiceBgColor[2]}
         beforeColor={choiceBeforeColor[0]}
       />
-    </div>
+    </StyledChoiceBtns>
   );
 };
 
 export default ChoiceBtns;
+
+const StyledChoiceBtns = styled.div`
+  display: grid;
+  width: 30rem;
+  height: 30rem;
+  /* gap: 2rem; */
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+`;
