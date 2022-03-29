@@ -17,6 +17,7 @@ const StyledChoiceBtnWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   &:last-child {
     grid-column: span 2;
     place-self: center;

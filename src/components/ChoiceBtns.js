@@ -1,5 +1,5 @@
 import ChoiceButton from './ChoiceButton';
-import { iconPaper, iconRock, iconScissors } from '../images';
+import { iconPaper, iconRock, iconScissors, bgTriangle } from '../images';
 import styled from 'styled-components';
 
 const choiceBgColor = [
@@ -38,9 +38,18 @@ export default ChoiceBtns;
 
 const StyledChoiceBtns = styled.div`
   display: grid;
-  width: 30rem;
+  width: 32rem;
   height: 30rem;
-  /* gap: 2rem; */
   place-items: center;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: url(${bgTriangle}) no-repeat;
+    z-index: -2;
+    background-position: center;
+  }
 `;
