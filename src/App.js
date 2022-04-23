@@ -1,5 +1,5 @@
 import './App.css';
-import { ChoiceBtns, Header } from './components';
+import { ChoiceBtns, Header, ResultBtn } from './components';
 import styled from 'styled-components';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <StyledApp>
       <Header />
       <ChoiceBtns />
+      <ResultBtn />
     </StyledApp>
   );
 }

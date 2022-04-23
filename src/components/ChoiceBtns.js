@@ -44,7 +44,7 @@ const StyledChoiceBtns = styled.div`
   grid-template-columns: 1fr 1fr;
   position: relative;
   @media screen and (max-width: 992px) {
-    transform: scale(0.85);
+    transform: scale(0.8);
   }
   &::before {
     position: absolute;

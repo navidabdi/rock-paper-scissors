@@ -20,12 +20,13 @@ const StyledHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
-  border: 4px solid #ffffff48;
+  border: 4px solid #ffffff35;
   padding: 1.5rem;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   width: 50%;
   @media screen and (max-width: 992px) {
     width: 90%;
+    transform: scale(0.9);
     padding: 1rem;
     margin-bottom: 0;
   }
