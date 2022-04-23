@@ -38,12 +38,14 @@ export default ChoiceBtns;
 
 const StyledChoiceBtns = styled.div`
   display: grid;
-  width: 32rem;
+  width: 34rem;
   height: 30rem;
   place-items: center;
   grid-template-columns: 1fr 1fr;
   position: relative;
-
+  @media screen and (max-width: 992px) {
+    transform: scale(0.85);
+  }
   &::before {
     position: absolute;
     content: '';
